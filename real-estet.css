@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(107, 109, 106);
+}
+
+header {
+    background: #6c6969;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.nav-container img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Search Bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 6px 12px;
+    font-size: 16px;
+    background: #b91c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #a11717;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .search-container {
+        margin-top: 10px; /* Add space between nav and search bar */
+        width: 100%; /* Make the search bar stretch across the full width */
+        justify-content: space-between;
+    }
+
+    .search-container input {
+        width: 75%; /* Adjust the width for small screens */
+    }
+
+    .search-container button {
+        width: 20%; /* Adjust button width */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the navigation items on smaller screens */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Space out the nav items */
+    }
+}
+
+.give-btn {
+    background: #b91c1c;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.apply-btn {
+    background: #2c3e50;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.hero {
+    position: relative; 
+    width: 100%;
+    height: 600px; /* Adjusted height */
+    background: url('images/pichou.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: -50px; /* Move the image up */
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 50px;
+    background: #878884;
+}
+
+.feature-box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.House-Renovation {
+    background: #41464d;
+    color: white;
+}
+
+.Remodeling{
+    background: #41464d;
+    color: black;
+}
+
+.Housing-Guide {
+    background: #41464d;
+    color: white;
+}
+
+.Recent-Sales{
+    background: #41464d;
+    color: white;
+}
+
+.about-section {
+    padding: 50px;
+    background: #62666b;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.footer-container {
+    background: #2e2e2f;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-contact, .footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-contact ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact ul li, .footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-contact ul li a, .footer-social ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social ul {
+    display: flex;
+}
+
+.footer-social ul li {
+    margin-right: 10px;
+}
+
+.footer-social ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #39393d;
+}
+.footer-social a{
+    background-color: #75899b;
+    color: white;
+}
+.location {
+    padding: 50px;
+    background: #6a6c69;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location-content img {
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.product-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.house-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 6px 12px;
+    font-size: 16px;
+    background: #b91c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #a11717;
+}
+
+.house-header {
+    background-color: #5e5c5c;
+}
+
+.house-content .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.house-content .card:hover {
+    transform: translateY(-5px);
+}
+
+.house-images {
+    margin-top: 20px;
+}
+
+.house-images img {
+    margin-bottom: 20px;
+}

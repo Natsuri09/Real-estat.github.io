@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses in Chukha - Dreams Real-Estate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="real-estet.css">
+    <link rel="icon" type="image/x-icon" href="images/logofor.webp">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">Dreams Real-Estate</h1>
+            <img src="images/logofor.webp" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="Real-Estet.html">Home</a></li>
+                    <li><a href="Real-Estet.html#about">About</a></li>
+                    <li><a href="house.html">Houses</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="house-header text-center py-5">
+        <h1>Houses in Chukha</h1>
+    </section>
+
+    <section class="house-images container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/house25.jpg" class="card-img-top house-img" alt="House 1">
+                    <div class="card-body">
+                        <h5 class="card-title">House 1</h5>
+                        <p class="card-text">Price: $500,000</p>
+                        <button class="btn btn-success" onclick="addToCart('House 1', 500000, 'images/house25.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/house26.jpg" class="card-img-top house-img" alt="House 2">
+                    <div class="card-body">
+                        <h5 class="card-title">House 2</h5>
+                        <p class="card-text">Price: $600,000</p>
+                        <button class="btn btn-success" onclick="addToCart('House 2', 600000, 'images/house26.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/house27.jpg" class="card-img-top house-img" alt="House 3">
+                    <div class="card-body">
+                        <h5 class="card-title">House 3</h5>
+                        <p class="card-text">Price: $700,000</p>
+                        <button class="btn btn-success" onclick="addToCart('House 3', 700000, 'images/house27.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/house28.jpg" class="card-img-top house-img" alt="House 4">
+                    <div class="card-body">
+                        <h5 class="card-title">House 4</h5>
+                        <p class="card-text">Price: $750,000</p>
+                        <button class="btn btn-success" onclick="addToCart('House 4', 750000, 'images/house28.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/house29.jpg" class="card-img-top house-img" alt="House 5">
+                    <div class="card-body">
+                        <h5 class="card-title">House 5</h5>
+                        <p class="card-text">Price: $800,000</p>
+                        <button class="btn btn-success" onclick="addToCart('House 5', 800000, 'images/house29.jpg')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <ul class="list-unstyled">
+                        <li>Email: info@dreamsrealestate.com</li>
+                        <li>Phone: +123-456-7890</li>
+                        <li>Address: 123 Dream St, Real Estate City, RE 12345</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com" target="_blank" class="text-white">Facebook</a></li>
+                        <li><a href="https://www.twitter.com" target="_blank" class="text-white">Twitter</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank" class="text-white">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" class="text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        function addToCart(product, price, image) {
+            const existingItem = cartItems.find(item => item.product === product);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({ product, price, image, quantity: 1 });
+            }
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert('Item added to cart!');
+        }
+    </script>
+</body>
+</html>

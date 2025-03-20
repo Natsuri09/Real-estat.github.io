@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Dreams Real-Estate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="wIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="real-estet.css">
+    <link rel="icon" type="image/x-icon" href="images/logofor.webp">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="images/logofor.webp" alt="Logo">
+            <h1 class="logo">Dreams Real-Estate</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="Real-Estet.html">Home</a></li>
+                    <li><a href="Real-Estet.html#about">About</a></li>
+                    <li><a href="house.html">Houses</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop-header text-center py-5">
+        <h1>Shop</h1>
+    </section>
+
+    <section class="shop-content container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/chair1.jpg" class="card-img-top product-img" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                       
+                        <p class="card-text">Price: $1000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 1', 1000, 'images/chair1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/chair2.jpeg" class="card-img-top product-img" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                       
+                        <p class="card-text">Price: $1500</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 2', 1500, 'images/chair2.jpeg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/chair3.jpg" class="card-img-top product-img" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                      
+                        <p class="card-text">Price: $1000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 3', 1000, 'images/chair3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/chair5.webp" class="card-img-top product-img" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 4</h5>
+                        
+                        <p class="card-text">Price: $2000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 4', 2000, 'images/chair5.webp')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/chair6.jpg" class="card-img-top product-img" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 5</h5>
+                       
+                        <p class="card-text">Price: $1500</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 5', 1500, 'images/chair6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed1.avif" class="card-img-top product-img" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 6</h5>
+                       
+                        <p class="card-text">Price: $2000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 6', 2000, 'images/bed1.avif')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed2.jpeg" class="card-img-top product-img" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 7</h5>
+                       
+                        <p class="card-text">Price: $2500</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 7', 2500, 'images/bed2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed3.jpg" class="card-img-top product-img" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 8</h5>
+                       
+                        <p class="card-text">Price: $1000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 8', 1000, 'images/bed3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed4.jpeg" class="card-img-top product-img" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 9</h5>
+                       
+                        <p class="card-text">Price: $2400</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 9', 2400, 'images/bed4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed6.jpg" class="card-img-top product-img" alt="Product 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 10</h5>
+                      
+                        <p class="card-text">Price: $3000</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 10', 3000, 'images/bed6.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bed 8.jpg" class="card-img-top product-img" alt="Product 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 11</h5>
+                      
+                        <p class="card-text">Price: $2300</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 11', 2300, 'images/bed 8.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/lamp1.jpg" class="card-img-top product-img" alt="Product 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 12</h5>
+                       
+                        <p class="card-text">Price: $2200</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 12', 2200, 'images/lamp1.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/lamp2.jpg" class="card-img-top product-img" alt="Product 13">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 13</h5>
+                      
+                        <p class="card-text">Price: $1300</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 13', 1300, 'images/lamp2.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/lamp3.webp" class="card-img-top product-img" alt="Product 14">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 14</h5>
+                       
+                        <p class="card-text">Price: $1200</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 14', 1200, 'images/lamp3.webp')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/lamp4.jpg" class="card-img-top product-img" alt="Product 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 15</h5>
+                      
+                        <p class="card-text">Price: $250</p>
+                        <button class="btn btn-primary" onclick="addToCart('Product 15', 1000, 'images/lamp4.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+                <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@dreamsrealestate.com</li>
+                    <li>Phone: +123-456-7890</li>
+                    <li>Address: 123 Dream St, Real Estate City, RE 12345</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/CST.University/" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="https://www.facebook.com/CST.University/" class="btn btn-outline-dark"><i class="bi bi-twitter"></i> Twitter</a>
+                        <a href="https://www.facebook.com/CST.University/" class="btn btn-outline-dark"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="https://www.facebook.com/CST.University/" class="btn btn-outline-dark"><i class="bi bi-skype"></i> Skype</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        function addToCart(product, price, image) {
+            const existingItem = cartItems.find(item => item.product === product);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cartItems.push({ product, price, image, quantity: 1 });
+            }
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert('Item added to cart!');
+        }
+        function addToCart(product, price, image) {
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    let existingItem = cartItems.find(item => item.product === product);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cartItems.push({ product, price, image, quantity: 1 });
+    }
+
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    alert(`${product} added to cart!`);
+}
+
+    </script>
+</body>
+</html>
